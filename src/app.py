@@ -15,7 +15,7 @@ def load_data():
     Loads and preprocesses the internet usage data.
     """
     # Make sure this CSV file is in the same directory as your app.py
-    df = pd.read_csv("../data/raw/share-of-individuals-using-the-internet.csv", sep=",")
+    df = pd.read_csv("data/raw/share-of-individuals-using-the-internet.csv", sep=",")
     
     # Rename the column for easier plotting
     df = df.rename({'Individuals using the Internet (% of population)': 'Usage'}, axis=1)
